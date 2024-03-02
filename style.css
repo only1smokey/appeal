@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #161523;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden; /* Hide scroll bars */
+}
+
+.catLogo {
+    position: absolute;
+    top: -325px; /* Extend 25px beyond the top edge of the container */
+    right: -195px; /* Extend 25px beyond the right edge of the container */
+    width: 85px; /* Set the width as needed */
+    z-index: 1; /* Ensure the image is in front of the container */
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 100px;
+    background: #302e4d;
+    border: 6px solid rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: #8070d4;
+    border:none;
+    
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 300px;
+    max-height: 566px; /* Set maximum height to 80% of viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds container height */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 10px;
+    
+    
+
+    /* From https://css.glass */
+    background: rgba(154, 154, 154, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7739a8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s
+    
+}
+
+button:hover {
+    background-color: #5f2987;
+    border-radius: 8px;
+}
+
+.wrapper {
+    position: relative;
+}
